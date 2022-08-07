@@ -43,8 +43,8 @@ export default function Home() {
     <>
       <Nav />
       <section className="px-4 gap-6 grid md:grid-cols-3 justify-center">
-        {data?.map((item) =>(
-          <Item item={item} />
+        {data?.map((item, i) =>(
+          <Item item={item} key={i} />
         ))}
       </section>
       <br></br>
