@@ -1,26 +1,26 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Readex+Pro&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  font-family: 'Readex Pro', sans-serif;
+}
+
+p, a {
+    @apply text-lg;
+    font-family: 'Readex Pro', sans-serif;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    @apply text-blue-400 hover:underline;
 }
 
-* {
-  box-sizing: border-box;
+body {
+    @apply bg-white text-black;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.w-fitcontent {
+    width: fit-content;
 }
